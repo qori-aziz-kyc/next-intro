@@ -1,0 +1,31 @@
+{
+    "extends": ["stylelint-config-standard-scss"],
+    "plugins": ["stylelint-order"],
+    "rules": {
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "use",
+            "forward",
+            "tailwind",
+            "apply",
+            "variants",
+            "responsive",
+            "screen",
+            "function",
+            "return",
+            "include",
+            "mixin",
+            "each",
+            "for",
+            "extend"
+          ]
+        }
+      ],
+      "order/properties-alphabetical-order": true,
+      "selector-class-pattern": null,
+      "scss/dollar-variable-pattern": null
+    },
+    "ignoreFiles": ["**/node_modules/**"]
+  }
